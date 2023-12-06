@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <title>My Portfolio</title>
+</head>
+
+<body>
+
+  <button id="dark-mode-toggle" class="dark-mode-toggle inset">
+    <i class="bi bi-brightness-low-fill fa-2x themeIcon"></i>
+  </button>
+
+  <nav id="desktop-nav">
+    <div class="logo"><img src="./assets/TR_LogoV4-removebg.png" alt="Name Logo" class="logo" /></div>
+
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="Hamlogo"><img src="./assets/TR_LogoV4-removebg.png" alt="Name Logo" class="logo" /></div>
+
+    <div class="hamburger-menu ">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1 ">Hello, I'm</p>
+      <h1 class="title fancyAnimate namespan">Tebogo&nbspRamasodi</h1>
+
+      <p class="section__text__p2 ">Software Developer</p>
+      <div class="btn-container">
+        <button class="button" onclick="window.open('./assets/Tebogo Ramasodi_CV.pdf.pdf')">
+          <i class="bi bi-download "></i>
+          Download CV
+        </button>
+        <button class="button" onclick="location.href='./#projects'">
+          <i class="bi bi-puzzle"></i>
+          Projects
+        </button>
+      </div>
+      <div id="socials-container">
+        <i class="bi bi-linkedin  fa-3x" onclick="location.href='https://linkedin.com/in/tebogorams'"></i>
+        <i class="bi bi-github  fa-3x" onclick="location.href='https://github.com/Tobyrams'"></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/facePic.jpg" alt="Profile picture" class="about-pic " />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+
+            <i class="bi bi-backpack2 icon fa-3x" alt="Education icon"></i>
+            <h3>Education</h3>
+            <p>Diploma in information Technology in Software
+              Development
+            </p>
+          </div>
+
+          <div class="details-container">
+            <i class="bi bi-award icon fa-3x" alt="Award icon"></i>
+            <h3>Transcripts</h3>
+            <button class="button" onclick="window.open('./assets/2022_Transcript.pdf')">
+              2022
+            </button>
+          </div>
+
+          <div class="details-container">
+            <i class="bi bi-patch-check icon fa-3x"></i>
+            <h3>Online Certificates</h3>
+            <button class="button" onclick="location.href='https://ude.my/UC-14727f42-eb45-4ef7-bff1-8723cecb5116'">
+              C#
+            </button>
+            <button class="button"
+              onclick="location.href='https://coursera.org/share/64dc14a4ba16634e7bd874fcd6909c8f'">
+              HTML/CSS
+            </button>
+          </div>
+
+
+        </div>
+        <div class="text-container">
+          <p>
+            Hardworking College Student
+            seeking employment. Bringing
+            forth a motivated attitude and a
+            variety of powerful skills. Adept in
+            various social media platforms
+            and office technology programs.
+            Committed to utilizing my skills
+            to further the mission of the
+            company.
+          </p>
+        </div>
+      </div>
+    </div>
+    <i class="bi bi-caret-down icon arrow fa-3x" onclick="location.href='./#experience'"></i>
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> -->
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers ex">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fab fa-html5" style="color: #ff8000; font-size: 40px;"></i>
+              <div>
+
+                <h3>HTML</h3>
+
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-css3-alt" style="color: #2263d3; font-size: 40px;"></i>
+              <div>
+                <h3>CSS</h3>
+
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-php" style="color: #8080c0; font-size: 40px"></i>
+              <div>
+                <h3>PHP</h3>
+
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-square-js" style="color: #f0db4f; font-size: 40px"></i>
+              <div>
+                <h3>JavaScript</h3>
+
+              </div>
+            </article>
+            <!-- <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article> -->
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-brands fa-java" style="color: #ff0000; font-size: 40px"></i>
+              <div>
+                <h3>Java</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/c-sharp-c-icon-1822x2048-wuf3ijab.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+
+              </div>
+            </article>
+            <article>
+
+              <img src="./assets/mysqlIcon.png" alt="Experience icon" class="icon" />
+
+              <div>
+                <h3>MYSQL</h3>
+
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <i class="bi bi-caret-down icon arrow fa-3x" onclick="location.href='./#projects'"></i>
+
+  </section>
+
+  <section id="projects">
+
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- Studen Module Manager 👇🏽 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/StudentModuless.png" alt="Project 3" class="project-img" />
+          </div> <br>
+          <h2 class="experience-sub-title project-title">Student Module Manager</h2>
+
+          <button class="button show-SMM-popUp">Learn More</button>
+
+          <div class="SMMpopUp hidden popUp">
+            <button class="close-popUp">&times;</button>
+            <h2 class="experience-sub-title project-title">Student Module Manager</h2>
+            <p> is a web platform that enables students to log in, view current year module
+              details, track progress, and manage module information.</p>
+            <div class="popUpIconContainer">
+              <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+              <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+              <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
+              <i class="fa-brands devicon-csharp-plain fa-2x popUp-Icon" style="color: rgb(170, 6, 170);"></i>
+
+            </div>
+          </div>
+
+          <button class="button" onclick="location.href='https://github.com/Tobyrams/StudentModuleManager'">
+            <i class="bi bi-github"></i>
+            Github
+          </button>
+        </div>
+
+        <!-- RescueARescue 👇🏽-->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/RescueARescue.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">RescueARescue</h2>
+
+          <button class="button show-Rescue-popUp">Learn More</button>
+          <div class="RescuepopUp hidden popUp">
+            <button class="close-popUp">&times;</button>
+            <h2 class="experience-sub-title project-title">RescueARescue</h2>
+            <p><b>RescueARescue</b> is a website designed for a non-profit organization dedicated to dog adoption. The
+              goal of
+              this project is to provide the NGO with a platform that increases exposure and social interaction,
+              ultimately helping them grow their dog adoption center.</p>
+            <button class="button" style="margin-top: 2em ;"
+              onclick="location.href='https://tobyrams.github.io/RescueARescue/'">
+              <i class="bi bi-play-fill"></i>
+              Live Demo
+            </button>
+            <div class="popUpIconContainer">
+              <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+              <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+            </div>
+          </div>
+          <button class=" button" onclick="location.href='https://github.com/Tobyrams/RescueARescue'">
+            <i class="bi bi-github"></i>
+            Github
+          </button>
+        </div>
+
+        <!-- BookTrekkers 👇🏽 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/BookStore.png" alt="Project 2" class="project-img" />
+          </div> <br>
+          <h2 class="experience-sub-title project-title">BookTrekkers</h2>
+
+          <button class="button show-Booktrekkers-popUp">Learn More</button>
+
+          <div class="BooktrekkerspopUp hidden popUp">
+            <button class="close-popUp">&times;</button>
+            <h2 class="experience-sub-title project-title">BookTrekkers</h2>
+            <P> is a web platform facilitating the buying and selling of secondhand textbooks among
+              students
+              within their schools. The project aims to provide a convenient and cost-effective solution for textbook
+              exchange, promoting savings and waste reduction.</P>
+            <button class="button" style="margin-top: 2em ;"
+              onclick="location.href='https://youtu.be/Sob6TSLgPwc?si=dXS4szs6z8eFv-B8'">
+              <i class="bi bi-youtube"></i>
+              Video
+            </button>
+
+            <div class="popUpIconContainer">
+              <i class=" fa-brands fa-php fa-2x popUp-Icon" style="color: purple;"></i>
+              <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+            </div>
+          </div>
+
+          <button class="button" onclick="location.href='https://github.com/Tobyrams/SecondHandBookStore'">
+            <i class="bi bi-github"></i>
+            Github
+          </button>
+        </div>
+
+
+
+        <!-- Habitual Habits 👇🏽 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/HabitualHabits.png" alt="Project 3" class="project-img" />
+          </div> <br>
+          <h2 class="experience-sub-title project-title">Habitual Habits</h2>
+
+          <button class="button show-Habitual-popUp">Learn More</button>
+
+          <div class="HabitualpopUp hidden popUp">
+            <button class="close-popUp">&times;</button>
+            <h2 class="experience-sub-title project-title">Habitual Habits</h2>
+            <p>This is a figma porotype on a habit tracking app, that manages users time</p>
+            <button class="button" onclick="location.href='https://youtu.be/pi7zzDNCPYk?si=w2K85lvB0E2-DGxD'">
+              <i class="bi bi-youtube"></i>
+              Prototype
+            </button>
+            <div class="popUpIconContainer">
+              <i class=" fa-brands fa-figma fa-2x popUp-Icon" style="color: red;"></i>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+    <i class="bi bi-caret-down icon arrow fa-3x" alt="Arrow down" onclick="location.href='./#contact'"></i>
+
+
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa-regular fa-envelope" style="font-size: 30px"></i>
+        <p><a href="mailto:Tobyrams@gmail.com">Tobyrams@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-brands fa-linkedin" style="font-size: 30px"></i>
+        <p><a href='https://linkedin.com/in/tebogorams'>LinkedIn</a></p>
+      </div>
+    </div>
+
+    <!-- <div class="Quote">
+      <i class="fa-solid fa-quote-left quoteLeft"></i>
+      <p class="Inspirational__Quote__h1">
+        TODAY I WILL DO<br>
+        WHAT OTHER WON'T<br>
+        SO TOMORROW<br>
+        I CAN DO WHAT<br>
+        OTHER CAN'T
+      </p>
+      <i class="fa-solid fa-quote-right quoteRight"></i>
+      <p class="Inspirational__Quote__h2">-JERRY RICE-</p>
+    </div> -->
+
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button class="button buttonUp" onclick="location.href='#'">
+            <i class="fa-solid fa-arrow-right fa-rotate-270" style="font-size: 30px;"></i>
+          </button>
+        </ul>
+
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Tebogo Ramasodi. All Rights Reserved.</p>
+  </footer>
+  <div class="overlay hidden"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
