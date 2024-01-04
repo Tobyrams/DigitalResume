@@ -101,9 +101,19 @@
           <div class="details-container">
             <i class="bi bi-award icon fa-3x" alt="Award icon"></i>
             <h3>Transcripts</h3>
-            <button class="button" onclick="window.open('./assets/2022_Transcript.pdf')">
-              2022
+            <button class="button show-transcript-popUp">
+              2022 / 23
             </button>
+            <!-- Transcripts popUp -->
+            <div class="TranscriptspopUp hidden  popUp">
+              <button class="close-popUp">&times;</button>
+              <img src="assets/2022-23-transcript.png" alt="Grades Transcript" style="width: 100%; ">
+              <button class="button" onclick="window.open('assets/FirstAndSecondYearTranscript.pdf')">
+                <i class="bi bi-download"></i>
+                Download
+              </button>
+            </div>
+
           </div>
 
           <div class="details-container">
