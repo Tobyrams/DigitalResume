@@ -272,3 +272,7 @@ const slider = function () {
 slider();
 
 //#endregion
+
+function openInNewTab(url) {
+  window.open(url, "_blank");
+}
