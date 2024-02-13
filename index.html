@@ -135,6 +135,11 @@
               JavaScript
             </button>
 
+            <button class="button"
+              onclick=" openInNewTab('https://www.udemy.com/certificate/UC-7565d856-4f00-45b2-946b-d6a548838b1c/')">
+              SQL
+            </button>
+
           </div>
 
 
@@ -266,45 +271,46 @@
         <div class="details-container color-container inset">
           <div class="article-container">
             <img src="./assets/Forkify_img.png" alt="Project 3" class="project-img" />
-          </div> <br>
-          <h2 class="experience-sub-title project-title">JavaScript Projects</h2>
-
-          <button class="button" onclick="location.href='javaScriptProjects_Page.html'">Learn
-            More</button>
-
-
-
-
-
+          </div>
+          <div class="articleContainerParagraph">
+            <h2 class="experience-sub-title project-title">JavaScript Projects</h2>
+            <div class="articleContainerParagraphButtons">
+              <button class="button" onclick="location.href='javaScriptProjects_Page.html'">Learn
+                More
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- Studen Module Manager 👇🏽 -->
         <div class="details-container color-container inset">
           <div class="article-container">
             <img src="./assets/StudentModuless.png" alt="Project 3" class="project-img" />
-          </div> <br>
-          <h2 class="experience-sub-title project-title">Student Module Manager</h2>
-
-          <button class="button show-SMM-popUp">Learn More</button>
-
-          <div class="SMMpopUp hidden popUp">
-            <button class="close-popUp">&times;</button>
+          </div>
+          <div class="articleContainerParagraph">
             <h2 class="experience-sub-title project-title">Student Module Manager</h2>
-            <p> is a web platform that enables students to log in, view current year module
-              details, track progress, and manage module information.</p>
-            <div class="popUpIconContainer">
-              <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
-              <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
-              <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
-              <i class="fa-brands devicon-csharp-plain fa-2x popUp-Icon" style="color: rgb(170, 6, 170);"></i>
+            <div class="articleContainerParagraphButtons">
+              <button class="button show-SMM-popUp">Learn More</button>
+              <div class="SMMpopUp hidden popUp">
+                <button class="close-popUp">&times;</button>
+                <h2 class="experience-sub-title project-title">Student Module Manager</h2>
+                <p> is a web platform that enables students to log in, view current year module
+                  details, track progress, and manage module information.</p>
+                <div class="popUpIconContainer">
+                  <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+                  <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                  <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
+                  <i class="fa-brands devicon-csharp-plain fa-2x popUp-Icon" style="color: rgb(170, 6, 170);"></i>
 
+                </div>
+              </div>
+
+              <button class="button" onclick="openInNewTab('https://github.com/Tobyrams/StudentModuleManager')">
+                <i class="bi bi-github"></i>
+                Github
+              </button>
             </div>
           </div>
-
-          <button class="button" onclick="location.href='https://github.com/Tobyrams/StudentModuleManager'">
-            <i class="bi bi-github"></i>
-            Github
-          </button>
         </div>
 
         <!-- RescueARescue 👇🏽-->
@@ -312,64 +318,76 @@
           <div class="article-container">
             <img src="./assets/RescueARescue.png" alt="Project 1" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">RescueARescue</h2>
-
-          <button class="button show-Rescue-popUp">Learn More</button>
-          <div class="RescuepopUp hidden popUp">
-            <button class="close-popUp">&times;</button>
+          <div class="articleContainerParagraph">
             <h2 class="experience-sub-title project-title">RescueARescue</h2>
-            <p><b>RescueARescue</b> is a website designed for a non-profit organization dedicated to dog adoption. The
-              goal of
-              this project is to provide the NGO with a platform that increases exposure and social interaction,
-              ultimately helping them grow their dog adoption center.</p>
-            <button class="button" style="margin-top: 2em ;"
-              onclick="location.href='https://tobyrams.github.io/RescueARescue/'">
-              <i class="bi bi-play-fill"></i>
-              Live Demo
-            </button>
-            <div class="popUpIconContainer">
-              <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
-              <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+
+            <div class="articleContainerParagraphButtons">
+              <button class="button show-Rescue-popUp">Learn More</button>
+              <div class="RescuepopUp hidden popUp">
+                <button class="close-popUp">&times;</button>
+                <h2 class="experience-sub-title project-title">RescueARescue</h2>
+                <p><b>RescueARescue</b> is a website designed for a non-profit organization dedicated to dog adoption.
+                  The
+                  goal of
+                  this project is to provide the NGO with a platform that increases exposure and social interaction,
+                  ultimately helping them grow their dog adoption center.</p>
+                <button class="button" style="margin-top: 2em ;"
+                  onclick="openInNewTab('https://tobyrams.github.io/RescueARescue/')">
+                  <i class="bi bi-play-fill"></i>
+                  Live Demo
+                </button>
+                <div class="popUpIconContainer">
+                  <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+                  <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                </div>
+              </div>
+              <button class=" button" onclick="openInNewTab('https://github.com/Tobyrams/RescueARescue')">
+                <i class="bi bi-github"></i>
+                Github
+              </button>
             </div>
           </div>
-          <button class=" button" onclick="location.href='https://github.com/Tobyrams/RescueARescue'">
-            <i class="bi bi-github"></i>
-            Github
-          </button>
         </div>
 
         <!-- BookTrekkers 👇🏽 -->
         <div class="details-container color-container inset">
           <div class="article-container">
             <img src="./assets/BookStore.png" alt="Project 2" class="project-img" />
-          </div> <br>
-          <h2 class="experience-sub-title project-title">BookTrekkers</h2>
-
-          <button class="button show-Booktrekkers-popUp">Learn More</button>
-
-          <div class="BooktrekkerspopUp hidden popUp">
-            <button class="close-popUp">&times;</button>
-            <h2 class="experience-sub-title project-title">BookTrekkers</h2>
-            <P> is a web platform facilitating the buying and selling of secondhand textbooks among
-              students
-              within their schools. The project aims to provide a convenient and cost-effective solution for textbook
-              exchange, promoting savings and waste reduction.</P>
-            <button class="button" style="margin-top: 2em ;"
-              onclick="location.href='https://youtu.be/Sob6TSLgPwc?si=dXS4szs6z8eFv-B8'">
-              <i class="bi bi-youtube"></i>
-              Video
-            </button>
-
-            <div class="popUpIconContainer">
-              <i class=" fa-brands fa-php fa-2x popUp-Icon" style="color: purple;"></i>
-              <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
-            </div>
           </div>
 
-          <button class="button" onclick="location.href='https://github.com/Tobyrams/SecondHandBookStore'">
-            <i class="bi bi-github"></i>
-            Github
-          </button>
+          <div class="articleContainerParagraph">
+
+            <h2 class="experience-sub-title project-title">BookTrekkers</h2>
+            <div class="articleContainerParagraphButtons">
+              <button class="button show-Booktrekkers-popUp">Learn More</button>
+
+              <div class="BooktrekkerspopUp hidden popUp">
+                <button class="close-popUp">&times;</button>
+                <h2 class="experience-sub-title project-title">BookTrekkers</h2>
+                <P> is a web platform facilitating the buying and selling of secondhand textbooks among
+                  students
+                  within their schools. The project aims to provide a convenient and cost-effective solution for
+                  textbook
+                  exchange, promoting savings and waste reduction.</P>
+                <button class="button" style="margin-top: 2em ;"
+                  onclick="openInNewTab('https://youtu.be/Sob6TSLgPwc?si=dXS4szs6z8eFv-B8')">
+                  <i class="bi bi-youtube"></i>
+                  Video
+                </button>
+
+
+                <div class="popUpIconContainer">
+                  <i class=" fa-brands fa-php fa-2x popUp-Icon" style="color: purple;"></i>
+                  <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                </div>
+              </div>
+
+              <button class="button" onclick="openInNewTab('https://github.com/Tobyrams/SecondHandBookStore')">
+                <i class="bi bi-github"></i>
+                Github
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
