@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/assets/TR_LogoV4-removebg.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <title>JavaScript Projects</title>
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo"><img src="./assets/TR_LogoV4-removebg.png" alt="Name Logo" class="logo" /></div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="Hamlogo"><img src="./assets/TR_LogoV4-removebg.png" alt="Name Logo" class="logo" /></div>
+
+        <div class="hamburger-menu ">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="projects">
+
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">JavaScript Projects😁</h1>
+        <p class="section__text__p1" style="color: rgb(154, 154, 154);">P.S. These projects are not mobile responsive
+            yet</p>
+        <div class="experience-details-container">
+
+
+
+            <!-- Forkify 👇🏽 -->
+            <div class="details-container noColor-container inset" id="forkify">
+                <div class="article-container">
+                    <img src="./assets/Forkify_img.png" alt="Forkify Project " class="project-img" />
+                </div> <br>
+                <h2 class="experience-sub-title project-title">Forkify</h2>
+
+                <p class="detailed-container-paragraph">
+                    Forkify is a website where you can discover a wide variety of recipes, get detailed info on
+                    ingredients and instructions, save your favorites for later, and adjust serving sizes to fit
+                    your
+                    preferences.
+                </p>
+                <p class="liveLink">
+                    <br>
+
+                    <a onclick="openInNewTab('https://forkify-tebogorams.netlify.app/')" href="#forkify"><i
+                            class="bi bi-broadcast"></i>
+                        Live view </a>
+
+                    <a onclick="openInNewTab('https://github.com/Tobyrams/forkify-Toby')" href="#forkify">
+                        <i class="bi bi-github"></i>
+                        github
+                    </a>
+                </p>
+
+                <div class="popUpIconContainer">
+                    <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+                    <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                    <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
+                </div>
+
+
+            </div>
+
+            <!-- Mapty 👇🏽 -->
+            <div class="details-container noColor-container inset" id="mapty">
+                <div class="article-container">
+                    <img src="./assets/Mapty_img.png" alt="Mapty Project " class="project-img" />
+                </div> <br>
+                <h2 class="experience-sub-title project-title">Mapty</h2>
+
+                <p class="detailed-container-paragraph">
+                    Mapty is a application for tracking your running and cycling workouts with the use of the
+                    geo-location api and presents the workouts to the user in a a user-friendly
+                    interface.
+                    <br>
+
+                    P.S. Check the github👇🏽below on how to use the application.
+                </p>
+                <p class="liveLink">
+                    <br>
+
+                    <a onclick="openInNewTab('https://tobyrams.github.io/Mapty/')" href="#mapty"><i
+                            class="bi bi-broadcast"></i>
+                        Live view </a>
+
+                    <a onclick="openInNewTab('https://github.com/Tobyrams/Mapty')" href="#mapty">
+                        <i class="bi bi-github"></i>
+                        github
+                    </a>
+                </p>
+
+                <div class="popUpIconContainer">
+                    <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+                    <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                    <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
+                </div>
+
+
+            </div>
+
+            <!-- Bankist Bank👇🏽-->
+            <div class="details-container noColor-container inset" id="BankistBank">
+                <div class="article-container">
+                    <img src="./assets/BankistBank_img.jpeg" alt="BankistBank Project" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">BankistBank</h2>
+
+                <p class="detailed-container-paragraph">
+                    Bankist is a bank application for users that allows them to see their transactions, transfer
+                    money
+                    to other users, request loans and close their account.
+                    <br>
+                    P.S. Check the github👇🏽below on how to use the application.
+                </p>
+                <p class="liveLink">
+                    <br>
+
+                    <a onclick="openInNewTab('https://tobyrams.github.io/BankistBank/')" href="#BankistBank"><i
+                            class="bi bi-broadcast"></i>
+                        Live view </a>
+
+                    <a onclick="openInNewTab('https://github.com/Tobyrams/BankistBank')" href="#BankistBank">
+                        <i class="bi bi-github"></i>
+                        github
+                    </a>
+                </p>
+
+                <div class="popUpIconContainer">
+                    <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+                    <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                    <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
+                </div>
+
+
+            </div>
+
+            <!-- Bankist 👇🏽 -->
+            <div class="details-container noColor-container inset">
+                <div class="article-container">
+                    <img src="./assets/Bankist_img.png" alt="Bankist Project" class="project-img" />
+                </div> <br>
+                <h2 class="experience-sub-title project-title">Bankist</h2>
+
+                <p class="detailed-container-paragraph">
+                    The website uses advanced DOM concepts and event listiners to achieve fancy hovers, smooth
+                    scrolling, scroll animations, page navigations, tabbed components, menu fade animations, lazy
+                    image
+                    loading and slider components.
+                </p>
+                <p class="liveLink">
+                    <br>
+
+                    <a onclick="openInNewTab('https://tobyrams.github.io/Bankist/')" href="#"><i
+                            class="bi bi-broadcast"></i>
+                        Live view </a>
+
+                    <a onclick="openInNewTab('https://github.com/Tobyrams/Bankist')" href="#">
+                        <i class="bi bi-github"></i>
+                        github
+                    </a>
+                </p>
+
+                <div class="popUpIconContainer">
+                    <i class=" fa-brands fa-html5 fa-2x popUp-Icon" style="color: orange;"></i>
+                    <i class=" fa-brands fa-css3-alt fa-2x popUp-Icon" style="color: blue;"></i>
+                    <i class=" fa-brands fa-js fa-2x popUp-Icon" style="color: rgb(187, 187, 14);"></i>
+                </div>
+
+
+            </div>
+            <br><br><br>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
