@@ -50,3 +50,7 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 //#endregion
+
+function openInNewTab(url) {
+  window.open(url, "_blank");
+}
