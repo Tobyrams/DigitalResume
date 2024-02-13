@@ -131,6 +131,46 @@ darkModeToggle.addEventListener("click", () => {
   }
 });
 
+//#region FancyAnimte for Name(TebogoRamasodi)
+const text = document.querySelector(".fancyAnimate");
+
+const strText = text.textContent;
+
+const splitText = strText.split("");
+
+//clear the text so it's dont duplicated eg. tebogoramasoditebogoramasodi
+text.textContent = "";
+
+//Adding a span to each element of the letters
+for (let i = 0; i < splitText.length; i++) {
+  text.innerHTML += "<span>" + splitText[i] + "</span>";
+}
+
+let char = 0;
+let timer = setInterval(onTick, 50);
+
+function onTick() {
+  //getting the characters from start to finish
+  const span = text.querySelectorAll("span")[char];
+
+  span.classList.add("fade");
+
+  char++;
+
+  //Stopping the animation when it get to the end of the string
+  if (char === splitText.length) {
+    complete();
+    return;
+  }
+}
+
+function complete() {
+  clearInterval(timer);
+  timer = null;
+}
+
+//#endregion
+
 //#endregion
 
 //#region Projects Slider //////////////////////////////////////////////////////////////////////////////////
