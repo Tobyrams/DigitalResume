@@ -122,6 +122,10 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+  .detailed-container-paragraph {
+    padding: 0% 10% 0 10%;
+  }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {

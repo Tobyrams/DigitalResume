@@ -111,13 +111,15 @@ a:hover {
 
 .liveLink {
   display: flex;
-  width: 100%;
+
   margin-top: 50px;
   margin-bottom: 30px;
   justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 .liveLink a {
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .liveLink a:hover {
@@ -499,7 +501,7 @@ section {
   background: var(--background);
   border-radius: 2rem;
   border: var(--foreground) 0.2rem solid;
-  border-color: var(--foreground);
+  border-color: var(--background);
   text-align: center;
   margin-top: 10rem;
 }
@@ -572,7 +574,7 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
+  border-color: var(--background);
   background: var(--background);
 }
 .noColor-container {
