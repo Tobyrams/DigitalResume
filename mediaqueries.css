@@ -35,7 +35,10 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  #profile,
   #contact,
+  #about,
+  #workExperience,
   #projects {
     height: fit-content;
   }
@@ -149,6 +152,7 @@
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: auto;
     height: 46vw;
@@ -192,5 +196,35 @@
   }
   .close-popUp {
     font-size: 3.5rem;
+  }
+  /* Work Experience Section */
+
+  .work__Experience__Section {
+    display: flex;
+    /* flex-direction: column; */
+    width: 80vw;
+    padding: 20px 0 0 0;
+    margin: 5rem auto;
+    padding: 1rem;
+  }
+  .work__Experience__Section > h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #6565ec;
+    flex-wrap: wrap;
+  }
+  .work-experience-List {
+    font-size: 0.9rem;
+  }
+  .tools-Section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tools {
+    font-size: 0.8rem;
+  }
+  .work__Experience__Section:hover {
+    box-shadow: none;
   }
 }
