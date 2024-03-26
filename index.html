@@ -148,7 +148,7 @@
           <p class="aboutMeParagraph">
             I'm Tebogo, a dedicated Software Development student proficient in languages like JavaScript, C# and more,
             seeking opportunities to contribute to projects and internships while constantly enhancing my
-            skills to stay abreast of new technological advancements.
+            skills to stay updated on new technological advancements.
           </p>
         </div>
       </div>
@@ -166,7 +166,7 @@
       <h2>Web Developer Intern</h2>
 
       <h3 class="child leftSlide">
-        <a class="workE__link " onclick="openInNewTab('https://gaotek.com/')">
+        <a class="workE__link Gaotek__Hover" onclick="openInNewTab('https://gaotek.com/')">
           Gaotek Inc.
           <i class="bi bi-arrow-up-right "></i>
         </a>
@@ -197,7 +197,7 @@
       <h2>Software Developer</h2>
 
       <h3 class="child leftSlide">
-        <a class="workE__link " onclick="openInNewTab('')">
+        <a class="workE__link Tadinda__Hover" onclick="openInNewTab('')">
           Tadinda
           <i class="bi bi-arrow-up-right "></i>
         </a>
@@ -456,32 +456,42 @@
 
   </section>
 
+
+
+
+
+
+  <!-- Using web3 to make the form work https://web3forms.com/ -->
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <i class="fa-regular fa-envelope" style="font-size: 30px"></i>
-        <p><a href="mailto:Tobyrams@gmail.com">Tobyrams@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <i class="fa-brands fa-linkedin" style="font-size: 30px"></i>
-        <p><a href='https://linkedin.com/in/tebogorams'>LinkedIn</a></p>
-      </div>
-    </div>
+    <div class="Form-container inset">
 
-    <!-- <div class="Quote">
-      <i class="fa-solid fa-quote-left quoteLeft"></i>
-      <p class="Inspirational__Quote__h1">
-        TODAY I WILL DO<br>
-        WHAT OTHER WON'T<br>
-        SO TOMORROW<br>
-        I CAN DO WHAT<br>
-        OTHER CAN'T
-      </p>
-      <i class="fa-solid fa-quote-right quoteRight"></i>
-      <p class="Inspirational__Quote__h2">-JERRY RICE-</p>
-    </div> -->
+      <form method="POST" id="form">
+
+        <input type="hidden" name="access_key" value="8656577f-0e52-4861-94e8-bc50ac243441">
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Type you message here..." required></textarea>
+        </div>
+
+        <button class="button" type="submit">Submit Form</button>
+
+        <div id="result"></div>
+
+      </form>
+    </div>
 
   </section>
 
@@ -490,7 +500,8 @@
       <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#workExperience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <button class="button buttonUp" onclick="location.href='#'">
@@ -504,6 +515,7 @@
   </footer>
   <div class="overlay hidden"></div>
   <script src="script.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>

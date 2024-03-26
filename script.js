@@ -171,100 +171,45 @@ function complete() {
 
 //#endregion
 
-//#region Projects Slider //////////////////////////////////////////////////////////////////////////////////
+//#region Form
+const form = document.getElementById("form");
+const result = document.getElementById("result");
 
-// const slider = function () {
-//   // Selecting DOM elements
-//   const slides = document.querySelectorAll(".slide");
-//   const btnLeft = document.querySelector(".slider__btn--left");
-//   const btnRight = document.querySelector(".slider__btn--right");
-//   const dotContainer = document.querySelector(".dots");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
 
-//   // Initial slide index and maximum slide index
-//   let curSlide = 0;
-//   const maxSlide = slides.length - 1;
-
-//   // Function to move to a specific slide
-//   const goToSlide = function (slide) {
-//     // Adjusting the transform property for each slide
-//     slides.forEach(
-//       (s, index) =>
-//         (s.style.transform = `translateX(${100 * (index - slide)}%)`)
-//     );
-//   };
-
-//   // Function to create dots for each slide
-//   const createDots = function () {
-//     slides.forEach(function (_, index) {
-//       // Adding dots to the dot container
-//       dotContainer.insertAdjacentHTML(
-//         "beforeend",
-//         `<button class="dots__dot" data-slide="${index}"></button>`
-//       );
-//     });
-//   };
-
-//   // Function to activate the corresponding dot for the current slide
-//   const activateDot = function (slide) {
-//     // Removing the 'dots__dot--active' class from all dots
-//     document
-//       .querySelectorAll(".dots__dot")
-//       .forEach((dot) => dot.classList.remove("dots__dot--active"));
-
-//     // Adding the 'dots__dot--active' class to the dot corresponding to the current slide
-//     document
-//       .querySelector(`.dots__dot[data-slide="${slide}"]`)
-//       .classList.add("dots__dot--active");
-//   };
-
-//   // Function to move to the next slide
-//   const nextSlide = function () {
-//     curSlide === maxSlide ? (curSlide = 0) : curSlide++;
-//     goToSlide(curSlide);
-//     activateDot(curSlide);
-//   };
-
-//   // Function to move to the previous slide
-//   const prevSlide = function () {
-//     curSlide === 0 ? (curSlide = maxSlide) : curSlide--;
-//     goToSlide(curSlide);
-//     activateDot(curSlide);
-//   };
-
-//   // Initialization function
-//   const init = function () {
-//     // Set up the initial state
-//     goToSlide(0);
-//     createDots();
-//     activateDot(0);
-//   };
-//   init();
-
-//   // Event handlers
-
-//   // Button click events
-//   btnRight.addEventListener("click", nextSlide);
-//   btnLeft.addEventListener("click", prevSlide);
-
-//   // Keyboard arrow key events
-//   document.addEventListener("keydown", function (e) {
-//     if (e.key === "ArrowLeft") prevSlide();
-//     if (e.key === "ArrowRight") nextSlide();
-//   });
-
-//   // Dot click event
-//   dotContainer.addEventListener("click", function (e) {
-//     if (e.target.classList.contains("dots__dot")) {
-//       // Extracting the slide index from the data attribute
-//       const { slide } = e.target.dataset;
-//       goToSlide(slide);
-//       activateDot(slide);
-//     }
-//   });
-// };
-// // Calling the slider function to initialize it
-// slider();
-
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = "Form submitted successfully";
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 3000);
+    });
+});
 //#endregion
 
 function openInNewTab(url) {

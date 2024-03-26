@@ -68,6 +68,9 @@
     /* position: relative; */
     margin-bottom: 30%;
   }
+  #contact {
+    height: fit-content;
+  }
   .arrow {
     display: none;
   }
@@ -106,7 +109,6 @@
 
 /* ////////////////////////// Phone ////////////////////////////////// */
 @media screen and (max-width: 600px) {
-  #contact,
   footer {
     height: 40vh;
   }
@@ -134,13 +136,10 @@
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
+  .aboutMeParagraph {
+    font-size: 1.1rem;
   }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }

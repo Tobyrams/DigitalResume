@@ -77,6 +77,8 @@ p {
 a,
 .btn {
   transition: all 300ms ease;
+  text-decoration: none;
+  color: var(--foreground);
 }
 
 nav,
@@ -574,9 +576,13 @@ section {
   color: gray;
   margin-bottom: 2rem;
 }
-.workE__link:hover {
+.Gaotek__Hover:hover {
   cursor: pointer;
   color: #0088b2;
+}
+.Tadinda__Hover:hover {
+  cursor: pointer;
+  color: #c39b22;
 }
 
 .child {
@@ -599,6 +605,7 @@ section {
     transform: translateX(0);
   }
 }
+
 .tools-Section {
   display: flex;
   flex-wrap: wrap;
@@ -772,43 +779,62 @@ article .icon {
 .hidden {
   display: none;
 }
-/* CONTACT */
 
+/*  Contact form  */
 #contact {
+  margin-bottom: 15rem;
+}
+
+.Form-container {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 5rem auto;
+  padding: 5rem;
+  border-radius: 10px;
+  /* margin-top: 2rem; */
+  button {
+    font-size: 1.5rem;
+  }
+}
+
+.form-group {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin: 10%;
-}
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin-bottom: 20px;
+
+  textarea {
+    height: 10rem;
+  }
+  label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  color: var(--foreground);
+  border: 1px solid var(--background);
+  box-shadow: var(--box-Shadow-Active);
+  background: var(--background);
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
+@media screen and (max-width: 600px) {
+  .Form-container {
+    padding: 2rem;
+    min-width: 90%;
+  }
 }
 
 /* FOOTER SECTION */
